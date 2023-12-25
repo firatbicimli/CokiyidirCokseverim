@@ -26,6 +26,7 @@ h1 {
   line-height: 1.1;
 }
 
+
 ul li {
   list-style-type: none;
 }
@@ -38,7 +39,7 @@ ul li {
   justify-content: center;
   flex-direction: column;
   height: 80%;
-  width: 350px;
+  width: 400px;
   padding: 10px;
   margin: auto;
   border-radius: 5px;
