@@ -1,0 +1,27 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container {
+  background: #eee;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  width: 350px;
+  padding: 25px;
+  margin: auto;
+  border-radius: 5px;
+ text-align: start;
+}
+
+
+
+
+
+
