@@ -19,7 +19,7 @@ function App() {
     { id: 12, title: 'Wes Anderson', category: 'Kitap' },
     ];
       const movieAndBookList2 = [
-        { id: 13, title: 'David Beckham - O', category: 'Belgesel' },
+    { id: 13, title: 'David Beckham - O', category: 'Belgesel' },
     { id: 14, title: 'The Last Dance - O', category: 'Belgesel' },
     { id: 15, title: 'Bobby Robson - O', category: 'Belgesel' },
     { id: 16, title: 'El Casa Figo - C', category: 'Belgesel' },
@@ -211,7 +211,62 @@ function App() {
     { id: 188, title: 'Taxi Driver - C', category: 'Film' },
     { id: 189, title: 'Prens - O', category: 'Dizi' },
     { id: 190, title: 'RoadRunner - C', category: 'Belgesel' },
-      ];                
+      ];
+    const movieAndBookList10 = [
+    { id: 191, title: 'BBC 2023 En İyi Dizi Listesi', category: 'Dizi' },
+    { id: 192, title: 'The Last Of Us', category: 'Dizi' },
+    { id: 193, title: 'Poker Face', category: 'Dizi' },
+    { id: 194, title: 'Shrinking', category: 'Dizi' },
+    { id: 195, title: 'Succession', category: 'Dizi' },
+    { id: 196, title: 'Beef', category: 'Dizi' },
+    { id: 197, title: 'Dead Ringer', category: 'Dizi' },
+    { id: 198, title: 'The Diplomat', category: 'Dizi' },
+    { id: 199, title: 'Happy Valley', category: 'Dizi' },
+    { id: 200, title: 'SILO', category: 'Dizi' },
+    { id: 201, title: 'The Bear', category: 'Dizi' },
+    { id: 202, title:'Dark Winds', category: 'Dizi' },
+    { id: 203, title: 'The Other Black Girl', category: 'Dizi' },
+    { id: 204, title: 'The Curse', category: 'Dizi' },
+    { id: 205, title: 'Slow Horse', category: 'Dizi' },
+    { id: 206, title: 'Top Boy', category: 'Dizi' },
+    { id: 207, title: 'Dreaming Whilst Block', category: 'Dizi' },
+    { id: 208, title: 'Colin From Accounts', category: 'Dizi' },
+    { id: 209, title: 'Fellow Travellers', category: 'Dizi' },
+    { id: 210, title: 'Haftalık Öneriler', category: 'Film/Dizi/Şarkı/Kitap' },
+    { id: 211, title: 'Leave the World Behind - O', category: 'Film' },
+    { id: 212, title: 'Planet Of The Apes - C', category: 'Film' },
+    { id: 213, title: 'Barry London', category: 'Film' },
+    { id: 214, title: 'Primal Fear - C', category: 'Film' },
+    { id: 215, title: 'The Hunt - C', category: 'Film' },
+    { id: 216, title: 'The Oslo Trilogy - O', category: 'Film' },
+    { id: 217, title: 'True Detective - C', category: 'Dizi' },
+    { id: 218, title: 'Mirgün Cabas Can Kozanoğlu - İlk Sayfası - C', category: 'Kitap' },
+    { id: 219, title: 'Byung Chul Han - Palyatif Toplum - C', category: 'Kitap' },
+    { id: 220, title: 'Michael Jackson - Off The Wall - O', category: 'Şarkı' },
+    { id: 221, title: 'French 79 - Between the Buttons - O', category: 'Şarkı' },
+    { id: 222, title: 'Jamiroquai - Something About You - O', category: 'Şarkı' },
+    { id: 223, title: 'Guru & Common - Any Given Sunday OST - O', category: 'Şarkı' },
+    { id: 224, title: 'Graham Coxon - In My Room - C', category: 'Şarkı' },
+    { id: 225, title: 'Manchester Orchestra - The Silence - C', category: 'Şarkı' },
+    { id: 226, title: 'Findlay - Stoned And Alone - C', category: 'Şarkı' },
+      ];
+    const movieAndBookList11 = [
+    { id: 227, title: 'Teras Noir - Ali Atay Serkan Keskin - O', category: 'Videocast' },
+    { id: 228, title: 'Mission Imposible - Dead Reckoning Part One - O', category: 'Film' },
+    { id: 229, title: 'The Last Schinitzel - O', category: 'Kısa - Film' },
+    { id: 230, title: 'Legends Of The Fall - C', category: 'Film' },
+    { id: 231, title: 'The Delinquents - C', category: 'Film' },
+    { id: 232, title: 'Kuş Uçuşu - O', category: 'Dizi' },
+    { id: 233, title: 'Rain Dogs - C', category: 'Dizi' },
+    { id: 234, title: 'Maid - O', category: 'Dizi' },
+    { id: 235, title: 'Scavengers Reign - C', category: 'Dizi' },
+    { id: 236, title: 'Babylon Berlin - C', category: 'Dizi' },
+    { id: 237, title: 'Alaca - Olmaz - O', category: 'Şarkı' },
+    { id: 238, title: 'Alaca - Bye - O', category: 'Şarkı' },
+    { id: 239, title: 'The Walkmen - Lisbon - C', category: 'Şarkı' },
+    { id: 240, title: 'Wye Oak - Spiral - C', category: 'Şarkı' },
+    { id: 241, title: 'Volker Kutscher - Gereon Rath^ın Sekizinci Vakası Olimpiyat - C', category: 'Kitap' },
+      ];                                    
     // İsterseniz buraya başka filmler ve kitaplar ekleyebilirsiniz
   
 
@@ -254,6 +309,14 @@ function App() {
       <div className="container">
         <h2>2.sezon 9.bölüm</h2>
         <List data={movieAndBookList9} />
+      </div>
+      <div className="container">
+        <h2>2.sezon 10.bölüm</h2>
+        <List data={movieAndBookList10} />
+      </div>
+      <div className="container">
+        <h2>2.sezon 11.bölüm</h2>
+        <List data={movieAndBookList11} />
       </div>
       </div>
     </>
