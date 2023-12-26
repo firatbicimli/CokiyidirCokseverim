@@ -178,7 +178,40 @@ function App() {
     { id: 157, title: 'The Bravery - An Honest Mistake - C', category: 'Şarkı' },
     { id: 158, title: 'The Last Shadow Puppets - My Mistakes Were Made For You - C', category: 'Şarkı' },
     { id: 159, title: 'Yusuf Atılgan - Aylak Adam - O', category: 'Kitap' },
-      ];        
+      ];
+    const movieAndBookList9 = [
+    { id: 160, title: 'Onur Erdem - Wrapped - 2023', category: 'Liste' },
+    { id: 161, title: 'Foals - O', category: 'Artist' },
+    { id: 162, title: 'Zaho Da Sagaz - O', category: 'Artist' },
+    { id: 163, title: 'Evdeki Saat - O', category: 'Artist' },
+    { id: 164, title: 'Bayou - O', category: 'Artist' },
+    { id: 165, title: 'Güneş - O', category: 'Artist' },
+    { id: 166, title: 'Tristesse - O', category: 'Şarkı' },
+    { id: 167, title: 'Dodi and Diana - O', category: 'Şarkı' },
+    { id: 168, title: 'Chaned to do Rhytm - O', category: 'Şarkı' },
+    { id: 169, title: 'Hey Okay - O', category: 'Şarkı' },
+    { id: 170, title:'Forever J - O', category: 'Şarkı' },
+    { id: 171, title: 'Caner Eler - Wrapped - 2023', category: 'Liste' },
+    { id: 172, title: 'Still Corners - C', category: 'Artist' },
+    { id: 173, title: 'Nation of Language - C', category: 'Artist' },
+    { id: 174, title: 'Radiohead - C', category: 'Artist' },
+    { id: 175, title: 'Daft Punk - C', category: 'Artist' },
+    { id: 176, title: 'Foals - C', category: 'Artist' },
+    { id: 177, title: 'Something About Us - C', category: 'Şarkı' },
+    { id: 178, title: 'Arkadaşım Eşşek - C', category: 'Şarkı' },
+    { id: 179, title: 'Champ Magnetique - C', category: 'Şarkı' },
+    { id: 180, title: 'Fortress - C', category: 'Şarkı' },
+    { id: 181, title: 'Haftalık Öneriler', category: 'Şarkı' },
+    { id: 182, title: 'Aşkın Nur Yengi - Yalancı Bahar - O', category: 'Şarkı' },
+    { id: 183, title: 'Death Cab For Cutie - An Arrow in the Wall - O', category: 'Şarkı' },
+    { id: 184, title: 'Zack Zack Zack - Luftballon (Shad Shadows Remix) - O', category: 'Şarkı' },
+    { id: 185, title: 'Never Look Away - C', category: 'Film' },
+    { id: 186, title: 'Das Leben der Anderen - C', category: 'Film' },
+    { id: 187, title: 'Blue Bayou - C', category: 'Film' },
+    { id: 188, title: 'Taxi Driver - C', category: 'Film' },
+    { id: 189, title: 'Prens - O', category: 'Dizi' },
+    { id: 190, title: 'RoadRunner - C', category: 'Belgesel' },
+      ];                
     // İsterseniz buraya başka filmler ve kitaplar ekleyebilirsiniz
   
 
@@ -217,6 +250,10 @@ function App() {
       <div className="container">
         <h2>2.sezon 8.bölüm</h2>
         <List data={movieAndBookList8} />
+      </div>
+      <div className="container">
+        <h2>2.sezon 9.bölüm</h2>
+        <List data={movieAndBookList9} />
       </div>
       </div>
     </>
