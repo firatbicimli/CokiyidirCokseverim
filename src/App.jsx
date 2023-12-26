@@ -136,6 +136,27 @@ function App() {
     { id: 119, title: 'Okay Kaya - Believe - C', category: 'Şarkı' },
     { id: 120, title: 'David Faster Wallace - Sicim Teorisi - C', category: 'Kitap' },
       ];
+    const movieAndBookList7 = [
+    { id: 121, title: 'Mariage Story - C', category: 'Film' },
+    { id: 122, title: 'Heat - O', category: 'Film' },
+    { id: 123, title: 'Rififi - C', category: 'Film' },
+    { id: 124, title: 'Body of Lies - O', category: 'Film' },
+    { id: 125, title:'Tinker Tailor Soldier Spy - C', category: 'Film' },
+    { id: 126, title: 'Hot Fuzz - O', category: 'Film' },
+    { id: 127, title: 'Baby Driver - C', category: 'Film' },
+    { id: 128, title: 'The Last Samurai - C', category: 'Film' },
+    { id: 129, title: 'The Father - C', category: 'Film' },
+    { id: 130, title: 'Fallen Leaves - C', category: 'Film' },
+    { id: 131, title: 'Jack Ryan - C', category: 'Dizi' },
+    { id: 132, title: 'Güneş - Yeni Albüm - O', category: 'Şarkı' },
+    { id: 133, title: 'Radio Tarifa - Sin Palabras - O', category: 'Şarkı' },
+    { id: 134, title: 'Ringo Jets - Yadigar Ejder - O', category: 'Şarkı' },
+    { id: 135, title: 'Serhat ft Viktor Lazio - Total Disguise - O', category: 'Şarkı' },
+    { id: 136, title: 'Scott Walker - Its Raining Today  - C', category: 'Şarkı' },
+    { id: 137, title: 'Belie and Sebastian - Sleep The Clock Around - C', category: 'Şarkı' },
+    { id: 138, title: 'John Berger - Bir Zamanlar EUROPA^da - C', category: 'Kitap' },
+    { id: 139, title: 'Scott Walker - C', category: 'Belgesel' },
+      ];  
     // İsterseniz buraya başka filmler ve kitaplar ekleyebilirsiniz
   
 
@@ -165,6 +186,10 @@ function App() {
       <div className="container">
         <h2>2.sezon 6.bölüm</h2>
         <List data={movieAndBookList6} />
+      </div>
+      <div className="container">
+        <h2>2.sezon 7.bölüm</h2>
+        <List data={movieAndBookList7} />
       </div>
     </>
   );
