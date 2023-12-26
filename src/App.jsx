@@ -156,13 +156,36 @@ function App() {
     { id: 137, title: 'Belie and Sebastian - Sleep The Clock Around - C', category: 'Şarkı' },
     { id: 138, title: 'John Berger - Bir Zamanlar EUROPA^da - C', category: 'Kitap' },
     { id: 139, title: 'Scott Walker - C', category: 'Belgesel' },
-      ];  
+      ];
+    const movieAndBookList8 = [
+    { id: 140, title: 'Paul George Alperen Şengün - O', category: 'Videocast' },
+    { id: 141, title: 'Ölümlü Dünya 2 - O', category: 'Film' },
+    { id: 142, title: 'Ford V Ferrari - O', category: 'Film' },
+    { id: 143, title: 'Oppenheimer - C', category: 'Film' },
+    { id: 144, title: 'Red Eye - O', category: 'Film' },
+    { id: 145, title: 'Point Break - C', category: 'Film' },
+    { id: 146, title: 'Big Wednesday - C', category: 'Film' },
+    { id: 147, title: 'Watchmen - C', category: 'Film' },
+    { id: 148, title: 'Gibi - O', category: 'Dizi' },
+    { id: 149, title: 'Seinfeld - C', category: 'Dizi' },
+    { id: 150, title:'Ayak İşleri - C - O', category: 'Dizi' },
+    { id: 151, title: 'Watchmen - C', category: 'Dizi' },
+    { id: 152, title: 'Procol Harum - A Whiter Shade Of Pale - O', category: 'Şarkı' },
+    { id: 153, title: 'The Sun Prophet - Who Stole The Soul - O', category: 'Şarkı' },
+    { id: 154, title: 'Foxygen - America - O', category: 'Şarkı' },
+    { id: 155, title: 'R.E.M - Lotus - O', category: 'Şarkı' },
+    { id: 156, title: 'Toro Y Moi - Still Sound  - O', category: 'Şarkı' },
+    { id: 157, title: 'The Bravery - An Honest Mistake - C', category: 'Şarkı' },
+    { id: 158, title: 'The Last Shadow Puppets - My Mistakes Were Made For You - C', category: 'Şarkı' },
+    { id: 159, title: 'Yusuf Atılgan - Aylak Adam - O', category: 'Kitap' },
+      ];        
     // İsterseniz buraya başka filmler ve kitaplar ekleyebilirsiniz
   
 
   return (
     <>
       <h1>Çok iyidir Çok severim</h1>
+      <div className="card">
       <div className="container">
         <h2>2.sezon 1.bölüm</h2>
         <List data={movieAndBookList} />
@@ -190,6 +213,11 @@ function App() {
       <div className="container">
         <h2>2.sezon 7.bölüm</h2>
         <List data={movieAndBookList7} />
+      </div>
+      <div className="container">
+        <h2>2.sezon 8.bölüm</h2>
+        <List data={movieAndBookList8} />
+      </div>
       </div>
     </>
   );
