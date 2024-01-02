@@ -285,7 +285,7 @@ function App() {
   return (
     <>
       <h1>Çok iyidir Çok severim</h1>
-      <input type="text" placeholder="Film,Dizi,Kitap" onChange={
+      <input type="text" placeholder="Film,Dizi,Kitap" value={search} onChange={
         (e) => setSearch(e.target.value)
       } /> 
       {result && (
