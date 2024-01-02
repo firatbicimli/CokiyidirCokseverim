@@ -2,6 +2,8 @@
 
 import React from 'react';
 import List from './components/List'; // List bileşenini import et
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function App() {
   const movieAndBookList = [
@@ -269,10 +271,32 @@ function App() {
       ];                                    
     // İsterseniz buraya başka filmler ve kitaplar ekleyebilirsiniz
   
+      const [search, setSearch] = useState('')
+      const [result, setResult] = useState([])
+
+      useEffect(() => {
+        if (search) {
+          setResult(data.filter(item => item.title.toLowerCase().includes(search.toLowerCase())))
+        } else {
+          setResult([])
+        }
+      }, [])
 
   return (
     <>
       <h1>Çok iyidir Çok severim</h1>
+      <input type="text" placeholder="Film,Dizi,Kitap" onChange={
+        (e) => setSearch(e.target.value)
+      } /> 
+      {result && (
+        <div className='search-result'>
+          {result.map(item => (
+            <div key={item.id} className='search-result-item'>
+              {item.title}
+            </div>
+          ))}
+        </div>
+      )}
       <div className="card">
       <div className="container">
         <h2>2.sezon 1.bölüm</h2>
