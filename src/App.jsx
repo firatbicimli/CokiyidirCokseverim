@@ -271,32 +271,28 @@ function App() {
       ];                                    
     // İsterseniz buraya başka filmler ve kitaplar ekleyebilirsiniz
   
-      const [search, setSearch] = useState('')
-      const [result, setResult] = useState([])
+    const [searchItem, setSearchItem] = useState('')
+    const [filteredUsers, setFilteredUsers] = useState(movieAndBookList)
 
-      useEffect(() => {
-        if (search) {
-          setResult(data.filter(item => item.title.toLowerCase().includes(search.toLowerCase())))
-        } else {
-          setResult([])
-        }
-      }, [])
+    const handleInputChange = (e) => { 
+      const searchTerm = e.target.value;
+      setSearchItem(searchTerm)
 
+      const filteredItems = movieAndBookList.filter((user) =>
+    user.firstName.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    setFilteredUsers(filteredItems);
+    }
   return (
     <>
       <h1>Çok iyidir Çok severim</h1>
-      <input type="text" placeholder="Film,Dizi,Kitap" value={search} onChange={
-        (e) => setSearch(e.target.value)
-      } /> 
-      {result && (
-        <div className='search-result'>
-          {result.map(item => (
-            <div key={item.id} className='search-result-item'>
-              {item.title}
-            </div>
-          ))}
-        </div>
-      )}
+      <input
+        type="text"
+        value={searchItem}
+        onChange={handleInputChange}
+        placeholder='Type to search'
+      />
       <div className="card">
       <div className="container">
         <h2>2.sezon 1.bölüm</h2>
