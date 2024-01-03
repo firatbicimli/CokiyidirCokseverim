@@ -268,7 +268,29 @@ function App() {
     { id: 239, title: 'The Walkmen - Lisbon - C', category: 'Şarkı' },
     { id: 240, title: 'Wye Oak - Spiral - C', category: 'Şarkı' },
     { id: 241, title: 'Volker Kutscher - Gereon Rath^ın Sekizinci Vakası Olimpiyat - C', category: 'Kitap' },
-      ];                                    
+      ];
+    const movieAndBookList12 = [
+    { id: 242, title: 'Barbie - O', category: 'Film' },
+    { id: 243, title: 'Money Monster - O', category: 'Film' },
+    { id: 244, title: 'Gone Baby Gone - O', category: 'Film' },
+    { id: 245, title: 'Anatomy Of A Fall - C', category: 'Film' },
+    { id: 246, title: 'Toni Erdman - C', category: 'Film' },
+    { id: 247, title: 'The Zone Of Interest - C', category: 'Film' },
+    { id: 248, title: 'Slow Horses - C', category: 'Dizi' },
+    { id: 249, title: 'Past Lives - C', category: 'Film' },
+    { id: 250, title: 'Mastro - C', category: 'Film' },
+    { id: 251, title: 'Pink - Family Portrait - O', category: 'Şarkı' },
+    { id: 252, title: 'Anouk - Nobody^s Wife - O', category: 'Şarkı' },
+    { id: 253, title: 'Fastball - The Way - O', category: 'Şarkı' },
+    { id: 254, title: 'Roy Vedas - Fragments of Life - O', category: 'Şarkı' },
+    { id: 255, title: 'Roosevelt - Moving On - C', category: 'Şarkı' },
+    { id: 256, title: 'Castiebeat - Reasearch - C', category: 'Şarkı' },
+    { id: 257, title: 'Porcelain Raft - The Earth Before Us - C', category: 'Şarkı' },
+    { id: 258, title: 'Ayfer Tunç - Bir Deliler Evinin Yalan Yanlış Anlatılan Kısa Tarihi - O', category: 'Kitap' },
+    { id: 259, title: 'Ayfer Tunç - Osman - O', category: 'Kitap' },
+    { id: 260, title: 'Önder Kaya - Avrupa Tarihi Üzerine Yazılar - C', category: 'Kitap' },
+    { id: 261, title: 'Hakan Bıçakçı - Alakalı Filmler - C', category: 'Kitap' },
+    ];                                                                        
     // İsterseniz buraya başka filmler ve kitaplar ekleyebilirsiniz
   
     const [searchItem, setSearchItem] = useState('')
@@ -337,6 +359,10 @@ function App() {
       <div className="container">
         <h2>2.sezon 11.bölüm</h2>
         <List data={movieAndBookList11} />
+      </div>
+      <div className="container">
+        <h2>2.sezon 12.bölüm</h2>
+        <List data={movieAndBookList12} />
       </div>
       </div>
     </>
