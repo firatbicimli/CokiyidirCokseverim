@@ -37,6 +37,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
   margin-top: 20px;
   width: 430px;
   height: 20px;
