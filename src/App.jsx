@@ -294,18 +294,19 @@ function App() {
     // İsterseniz buraya başka filmler ve kitaplar ekleyebilirsiniz
   
     const [searchItem, setSearchItem] = useState('')
-    const [filteredUsers, setFilteredUsers] = useState(movieAndBookList)
+    const [filteredContent, setFilteredContent] = useState(movieAndBookList
+      );
 
-    const handleInputChange = (e) => { 
-      const searchTerm = e.target.value;
-      setSearchItem(searchTerm)
+      const handleInputChange = (e) => {
+        const searchTerm = e.target.value;
+        setSearchItem(searchTerm);
 
-      const filteredItems = movieAndBookList.filter((user) =>
-    user.firstName.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    setFilteredUsers(filteredItems);
-    }
+        const filteredItems = allContentList.filter((item) =>
+        item.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+  
+      setFilteredContent(filteredItems);
+    };
   return (
     <>
       <h1>Çok iyidir Çok severim</h1>
