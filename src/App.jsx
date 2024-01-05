@@ -2,8 +2,7 @@
 
 import React from 'react';
 import List from './components/List'; // List bileşenini import et
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import movie from '../movieList'
 
 function App() {
