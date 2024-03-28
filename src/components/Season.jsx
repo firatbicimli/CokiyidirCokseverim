@@ -1,16 +1,15 @@
 import React from 'react'
 import List from './List'
- // List bileşenini import et
+import movie from './../../movieList'
+import Listitem from './Listitem'
 
 
-const Season = ({ data }) => {
+
+const Season = () => {
   return (
     <div>
-      {movie.map((season)=>  
-        <div>
-        <h2>{season.title}</h2>
-        <List  data={season.episodes}  />
-      </div> )}
+      {movie.map((season, index)=>  
+     <Listitem key={index} season={season} />)}
     </div>
   )
 }

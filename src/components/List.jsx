@@ -4,7 +4,7 @@ function List({ data }) {
   return (
     <ul>
       {data.map(item => (
-        <li key={item.id}>
+        <li className='list' key={item.id}>
           <strong>{item.title}</strong> - {item.category}
         </li>
       ))}

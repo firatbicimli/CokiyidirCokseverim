@@ -57,25 +57,25 @@ input:focus {
   gap: 10px;
 }
 
-.container {
-  background: #eee;
+
+.list {
+  background: #fff;
+  color: #000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  cursor: pointer;
+  background-color: #eee;
   color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 80%;
-  width: 400px;
   padding: 10px;
-  border-radius: 5px;
-  text-align: start;
-  margin-top: 10px;
+  border-radius: 7px;
 }
 
 
-.season {
-  background: #eee;
-  color: #102051;
-  width: 50px;
-  height: 20px;
-}
