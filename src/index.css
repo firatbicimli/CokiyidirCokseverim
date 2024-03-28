@@ -73,3 +73,9 @@ input:focus {
 }
 
 
+.season {
+  background: #eee;
+  color: #102051;
+  width: 50px;
+  height: 20px;
+}
