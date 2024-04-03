@@ -10,6 +10,7 @@ function App() {
       <div className="card">
         <Season />
       </div>
+      
     </>
   );
 }
