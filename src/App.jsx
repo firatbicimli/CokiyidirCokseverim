@@ -1,4 +1,3 @@
-import React from 'react';
 import Season from './components/Season';
 
 
@@ -9,8 +8,7 @@ function App() {
       <h1>Çok iyidir Çok severim</h1>
       <div className="card">
         <Season />
-      </div>
-      
+      </div>    
     </>
   );
 }

@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import List from './List'
+import PropTypes from 'prop-types';
 
 const Listitem = ({ season }) => {
 
-    const [extended, setExtended] = useState(false)
+const [extended, setExtended] = useState(false)
 
   return (
       <div onClick={() => setExtended((prev) => !prev)}>
@@ -12,5 +13,18 @@ const Listitem = ({ season }) => {
       </div>
   )
 }
+
+Listitem.propTypes = {
+  season: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    episodes: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        title: PropTypes.string.isRequired,
+        category: PropTypes.string.isRequired
+      })
+    ).isRequired
+  }).isRequired
+};
 
 export default Listitem

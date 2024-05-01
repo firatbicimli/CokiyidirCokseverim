@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 function List({ data }) {
   return (
@@ -11,5 +11,16 @@ function List({ data }) {
     </ul>
   );
 }
+
+List.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      category: PropTypes.string.isRequired
+    })
+  ).isRequired
+};
+
 
 export default List;
