@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function List({ data }) {
   return (
-    <ul>
+    <ul className='extended'>
       {data.map(item => (
         <li className='list' key={item.id}>
           <strong>{item.title}</strong> - {item.category}
